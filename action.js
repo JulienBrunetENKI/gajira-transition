@@ -44,10 +44,12 @@ module.exports = class {
           ]
       },
 			transition: {
-				id: transitionToApply.id,
+				//id: transitionToApply.id,
+				id: "3"
 			},
 			fields: {
-				resolution: {name: "Done"}
+				resolution: {name: "Done"},
+				customfield_10016: {id: "1|i04x8z:"}
 			}
     })
 

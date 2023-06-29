@@ -44,13 +44,17 @@ module.exports = class {
           ]
       },
 			transition: {
-				//id: transitionToApply.id,
-				id: "3"
+				id: transitionToApply.id,
 			},
 			fields: {
-				resolution: {name: "Done"},
-				customfield_10016: {id: "1|i04x8z:"}
-			}
+				resolution: {
+					self: "https://partners-iot-leroymerlin.atlassian.net/rest/api/2/resolution/10107",
+					id: "10107",
+					description: "Work has been completed on this issue.",
+					name: "Done"
+   		  },
+				customfield_10016: {id: "1|i04x8z:"},
+			},
     })
 
     const transitionedIssue = await this.Jira.getIssue(issueId)

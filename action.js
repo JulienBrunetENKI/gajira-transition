@@ -38,17 +38,17 @@ module.exports = class {
     console.log(`Selected transition:${JSON.stringify(transitionToApply, null, 4)}`)
 
     await this.Jira.transitionIssue(issueId, {
+      update: {
+          comment: [
+              {add: {body: "Closed on GitHub"}}
+          ]
+      },
 			transition: {
 				id: transitionToApply.id,
 			},
 			fields: {
-				resolution: {
-					self: "https://partners-iot-leroymerlin.atlassian.net/rest/api/2/resolution/10107",
-					id: "10107",
-					description: "Work has been completed on this issue.",
-					name: "Done"
-				}
-			},
+				resolution: {name: "Done"}
+			}
     })
 
     const transitionedIssue = await this.Jira.getIssue(issueId)

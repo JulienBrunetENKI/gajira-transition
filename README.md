@@ -91,5 +91,5 @@ ensuite pour verifier que les pacakges sont installés tape:
 
 pour compiler les sources tape:
 
-`ncc build index.js --minify 
+`ncc build index.js --minify`
 

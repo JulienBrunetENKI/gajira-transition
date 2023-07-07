@@ -72,3 +72,24 @@ jobs:
 
 ### Writes fields to config file at $HOME/jira/config.yml
 - None
+
+
+----
+## How to Build index.js:
+
+if you need to build the index.js .
+
+you need to install this dep.
+
+`npm install`
+
+cela va  installer les packages manquants en locale.
+ensuite pour verifier que les pacakges sont installés tape:
+
+`npm list yaml & jira` 
+
+
+pour compiler les sources tape:
+
+`ncc build index.js --minify 
+

@@ -83,13 +83,12 @@ you need to install this dep.
 
 `npm install`
 
-cela va  installer les packages manquants en locale.
-ensuite pour verifier que les pacakges sont installés tape:
+this will install the missing packages locally.
+then to verify that the packages are installed type:
 
 `npm list yaml & jira` 
 
-
-pour compiler les sources tape:
+to compile the sources type:
 
 `ncc build index.js --minify`
 
